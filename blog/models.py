@@ -8,7 +8,7 @@ class Post(models.Model): #models.Model означает, что объект Po
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE) # ссылка на другую модель
     title = models.CharField(max_length=200) #так мы определяем текстовое поле с ограничением на количество символов.
     text = models.TextField() #так определяется поле для неограниченно длинного текста.
-    created_date = models.DateTimeField(default=timezone.now)
+    created_date = models.DateTimeField(default=timezone.now) #дата и время.
     published_date = models.DateTimeField(blank=True, null=True)
 
     def publish(self):

@@ -9,8 +9,8 @@
     </head>
     <body>
         <div class="page-header">
-            {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            {% if user.is_authenticated %} <!-- проверка пользователя -->
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a> <!--ссылка на форму для записи нового поста -->
             {% endif %}
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
