@@ -1,5 +1,6 @@
 from django.urls import path
-from . import views  #импорт всех представлений
+
+from . import views  # импорт всех представлений
 
 
 urlpatterns = [
